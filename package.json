@@ -4,7 +4,7 @@
   "description": "Tailwind version of a band webpage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "postcss src/css/tailwind.css -o src/public/build/tailwind.css"
   },
   "repository": {
     "type": "git",
