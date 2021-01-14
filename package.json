@@ -1,0 +1,29 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "Tailwind version of a band webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniarques11/Pd2.1_2021_Tailwind.git"
+  },
+  "keywords": [
+    "tailwind",
+    "web",
+    "band"
+  ],
+  "author": "Dani Arqués & Alberto Mañas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniarques11/Pd2.1_2021_Tailwind/issues"
+  },
+  "homepage": "https://github.com/daniarques11/Pd2.1_2021_Tailwind#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}
