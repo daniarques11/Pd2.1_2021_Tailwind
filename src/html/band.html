@@ -5,26 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../public/styles.css" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(() => {
+          //Load the HTML contents of the header into <header>
+          $("header").load("navbar.html");
+          $("footer").load("footer.html");
+      });
+  </script>
     <title>Band</title>
 </head>
 <body>
-    <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
-        <div>
-          1
-        </div>
-        <div class="col-start-3">
-          2
-        </div>
-        <div>
-          3
-        </div>
-        <div>
-          4
-        </div>
-        <div class="row-start-1 col-start-2 col-span-2">
-          5
-        </div>
-      </div>
-      
+  <header>
+  </header>
+
 </body>
 </html>
