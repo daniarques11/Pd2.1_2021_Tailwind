@@ -14,9 +14,11 @@
             $("footer").load("footer.html");
         });
     </script>
+    <!--Load the carrousel script afer the page is loaded-->
+    <script src="../js/home-carrousel.js" defer="defer"></script>
 </head>
 
-<body>
+<body class="h-screen flex flex-col justify-between">
     <header></header>
     <main class="flex flex-col items-center gap-5 font-sans">
         <div id="background" class="w-full">
@@ -39,26 +41,9 @@
         </div>
 
     </main>
-    <footer></footer>
-    <script>
-        var myIndex = 0;
+    <footer>
 
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("slides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000);
-        }
-    </script>
+    </footer>
 </body>
 
 </html>
