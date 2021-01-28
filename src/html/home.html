@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../public/styles.css" rel="stylesheet">
+    <script>
+        window.onload = function() {
+            carousel(0);
+        }
+
+        function carousel(index) {
+            changeBackground(images[index]);
+            if (index == images.length - 1) {
+                index = 0;
+            } else {
+                index++;
+            }
+            setTimeout(function() {
+                carousel(index);
+            }, 3000); // Change image every 5 seconds
+        }
+
+        function changeBackground(image) {
+            document.body.style.backgroundImage = image;
+        }
+        var images = ["url('/src/images/band-1.jpg')", "url('/src/images/band-2.jpg')", "url('/src/images/band-3.jpg')"];
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
